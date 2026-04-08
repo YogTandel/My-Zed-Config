@@ -1,411 +1,581 @@
 {
-	"show_edit_predictions": true,
-	"show_wrap_guides": false,
-	"minimap": {
-		"show": "never",
-		"thumb": "always",
-		"thumb_border": "left_open",
-		"current_line_highlight": null
-	},
-	"indent_guides": {
-		"enabled": true,
-		"line_width": 1,
-		"active_line_width": 0,
-		"coloring": "indent_aware",
-		"background_coloring": "disabled"
-	},
-	"inlay_hints": {
-		"enabled": true,
-		"show_type_hints": true,
-		"show_parameter_hints": true,
-		"show_other_hints": true,
-		"show_background": false,
-		"edit_debounce_ms": 700,
-		"scroll_debounce_ms": 50,
-		"toggle_on_modifiers_press": {
-			"control": true
-		},
-		"show_value_hints": true
-	},
-	"status_bar": {
-		"active_language_button": true,
-		"cursor_position_button": false
-	},
-	"tab_bar": {
-		"show": true,
-		"show_nav_history_buttons": false,
-		"show_tab_bar_buttons": true
-	},
-	"scroll_beyond_last_line": "off",
-	"soft_wrap": "editor_width",
-	"icon_theme": "Symbols Icon Theme",
-	"theme": "Catppuccin Espresso (Blur) [Light]",
-	"redact_private_values": false,
-	"context_servers": {
-		"mcp-server-context7": {
-			"source": "extension",
-			"enabled": true,
-			"settings": {
-				"context7_api_key": ""
-			}
-		}
-	},
-	"terminal": {
-		"alternate_scroll": "off",
-		"blinking": "on",
-		"copy_on_select": false,
-		"keep_selection_on_copy": false,
-		"dock": "bottom",
-		"default_width": 640,
-		"default_height": 320,
-		"cursor_shape": "underline",
-		"env": {
-			"FIG_NEW_SESSION": "1",
-			"Q_NEW_SESSION": "1"
-		},
-		"detect_venv": {
-			"on": {
-				"directories": [".env", "env", ".venv", "venv"],
-				"activate_script": "default"
-			}
-		},
-		"font_size": 14,
-		"line_height": "comfortable",
-		"minimum_contrast": 45,
-		"button": false,
-		"shell": "system",
-		"toolbar": {
-			"breadcrumbs": false
-		},
-		"working_directory": "current_project_directory",
-		"scrollbar": {
-			"show": null
-		}
-	},
-	"prettier": {
-		"allowed": true
-	},
-	"buffer_font_family": "JetBrainsMono Nerd Font",
-	"buffer_font_size": 14,
-	"wrap_guides": [80, 120],
-	"ui_font_family": ".SystemUIFont",
-	"ui_font_size": 15,
-	"ui_font_weight": 500,
-	"diagnostics_max_severity": "hint",
-	"autoscroll_on_clicks": true,
-	"base_keymap": "VSCode",
-	"buffer_line_height": {
-		"custom": 1.5
-	},
-	"toolbar": {
-		"code_actions": true,
-		"breadcrumbs": true,
-		"quick_actions": true,
-		"selections_menu": true,
-		"agent_review": true
-	},
-	"project_panel": {
-		"button": false,
-		"default_width": 240,
-		"hide_gitignore": false,
-		"folder_icons": true,
-		// "hide_root": true,
-		"indent_size": 20,
-		"auto_fold_dirs": false,
-		"drag_and_drop": true,
-		"git_status": true,
-		"auto_reveal_entries": true,
-		"entry_spacing": "comfortable",
-		"starts_open": true,
-		"scrollbar": {
-			"show": null
-		},
-		"indent_guides": {
-			"show": "always"
-		},
-		"sticky_scroll": false,
-		"dock": "left"
-	},
-	"tabs": {
-		"close_position": "right",
-		"file_icons": true,
-		"git_status": true,
-		"activate_on_close": "neighbour",
-		"show_close_button": "hover",
-		"show_diagnostics": "all"
-	},
-	"current_line_highlight": "none",
-	"tab_size": 2,
-	"hard_tabs": true,
-	"load_direnv": "direct",
-	"buffer_font_features": {
-		"liga": false,
-		"calt": false
-	},
-	"always_treat_brackets_as_autoclosed": true,
-	"agent": {
-		"dock": "right"
-	},
-	"debugger": {
-		"dock": "bottom"
-	},
-	"edit_predictions": {
-		"mode": "subtle",
-		"copilot": {
-			"proxy": null,
-			"proxy_no_verify": null,
-			"enterprise_uri": null
-		},
-		"enabled_in_text_threads": false
-	},
-	"title_bar": {
-		"show_branch_icon": true,
-		"show_branch_name": true,
-		"show_project_items": true,
-		"show_onboarding_banner": false,
-		"show_user_picture": true,
-		"show_sign_in": true,
-		"show_menus": false
-	},
-	"git": {
-		"git_gutter": "tracked_files",
-		"inline_blame": {
-			"enabled": true,
-			"show_commit_summary": true,
-			"padding": 7
-		},
-		"branch_picker": {
-			"show_author_name": true
-		},
-		"hunk_style": "unstaged_hollow"
-	},
-	"cursor_blink": true,
-	"show_whitespaces": "none",
-	"collaboration_panel": {
-		"button": false
-	},
-	"outline_panel": {
-		"button": false,
-		"default_width": 300,
-		"file_icons": true,
-		"folder_icons": true,
-		"git_status": true,
-		"indent_size": 20,
-		"auto_reveal_entries": true,
-		"auto_fold_dirs": true,
-		"indent_guides": {
-			"show": "always"
-		},
-		"scrollbar": {
-			"show": null
-		}
-	},
-	"file_types": {
-		"css": ["*.css"],
-		"json": [".prettierrc"],
-		"dotenv": [".env.*"],
-		"Dockerfile": ["Dockerfile", "Dockerfile.*"],
-		"JSON": ["json", "jsonc", "*.code-snippets"]
-	},
-	"lsp": {
-		"tailwindcss-language-server": {
-			"settings": {
-				"classAttributes": ["class", "className", "ngClass", "styles"]
-			}
-		}
-	},
-	"experimental.theme_overrides": {
-		"syntax": {
-			"attribute": {
-				"color": "#00E0FF",
-				"font_style": null,
-				"font_weight": null
-			},
-			"boolean": {
-				"color": "#FF77E9",
-				"font_style": "italic",
-				"font_weight": null
-			},
-			"comment": {
-				"color": "#6B7280",
-				"font_style": "italic",
-				"font_weight": null
-			},
-			"comment.doc": {
-				"color": "#71717A",
-				"font_style": "italic",
-				"font_weight": null
-			},
-			"constant": {
-				"color": "#FFD866",
-				"font_style": null,
-				"font_weight": null
-			},
-			"constructor": {
-				"color": "#36F9F6",
-				"font_style": null,
-				"font_weight": null
-			},
-			"embedded": {
-				"color": "#50FA7B",
-				"font_style": null,
-				"font_weight": null
-			},
-			"emphasis": {
-				"color": "#FF8C00",
-				"font_style": "italic",
-				"font_weight": null
-			},
-			"emphasis.strong": {
-				"color": "#FF8C00",
-				"font_style": "italic",
-				"font_weight": 700
-			},
-			"enum": {
-				"color": "#82AAFF",
-				"font_style": null,
-				"font_weight": null
-			},
-			"function": {
-				"color": "#00FFFF",
-				"font_style": null,
-				"font_weight": null
-			},
-			"hint": {
-				"color": "#52525B",
-				"font_style": null,
-				"font_weight": 700
-			},
-			"keyword": {
-				"color": "#FF2E97",
-				"font_style": null,
-				"font_weight": null
-			},
-			"label": {
-				"color": "#C0C0C0",
-				"font_style": null,
-				"font_weight": null
-			},
-			"link_text": {
-				"color": "#00E0FF",
-				"font_style": "italic",
-				"font_weight": null
-			},
-			"link_uri": {
-				"color": "#00E0FF",
-				"font_style": null,
-				"font_weight": null
-			},
-			"number": {
-				"color": "#F8E71C",
-				"font_style": null,
-				"font_weight": null
-			},
-			"operator": {
-				"color": "#FF2E97",
-				"font_style": null,
-				"font_weight": null
-			},
-			"predictive": {
-				"color": "#FFB454",
-				"font_style": "italic",
-				"font_weight": null
-			},
-			"preproc": {
-				"color": "#FF8C00",
-				"font_style": null,
-				"font_weight": null
-			},
-			"primary": {
-				"color": "#00FFFF",
-				"font_style": null,
-				"font_weight": null
-			},
-			"property": {
-				"color": "#7FDBFF",
-				"font_style": "italic",
-				"font_weight": null
-			},
-			"punctuation": {
-				"color": "#B3B3B3",
-				"font_style": null,
-				"font_weight": null
-			},
-			"punctuation.bracket": {
-				"color": "#B3B3B3",
-				"font_style": null,
-				"font_weight": null
-			},
-			"punctuation.delimiter": {
-				"color": "#A3A3A3",
-				"font_style": null,
-				"font_weight": null
-			},
-			"punctuation.list_marker": {
-				"color": "#A3A3A3",
-				"font_style": null,
-				"font_weight": null
-			},
-			"punctuation.special": {
-				"color": "#FF2E97",
-				"font_style": null,
-				"font_weight": null
-			},
-			"string": {
-				"color": "#C2F970",
-				"font_style": null,
-				"font_weight": null
-			},
-			"string.escape": {
-				"color": "#50FA7B",
-				"font_style": null,
-				"font_weight": null
-			},
-			"string.regex": {
-				"color": "#63F5B8",
-				"font_style": null,
-				"font_weight": null
-			},
-			"string.special": {
-				"color": "#FF8C00",
-				"font_style": null,
-				"font_weight": null
-			},
-			"string.special.symbol": {
-				"color": "#F8E71C",
-				"font_style": null,
-				"font_weight": null
-			},
-			"tag": {
-				"color": "#00E0FF",
-				"font_style": null,
-				"font_weight": null
-			},
-			"text.literal": {
-				"color": "#C0C0C0",
-				"font_style": null,
-				"font_weight": null
-			},
-			"title": {
-				"color": "#FF8C00",
-				"font_style": null,
-				"font_weight": 700
-			},
-			"type": {
-				"color": "#82AAFF",
-				"font_style": "italic",
-				"font_weight": null
-			},
-			"variable": {
-				"color": "#E0E0E0",
-				"font_style": null,
-				"font_weight": null
-			},
-			"variant": {
-				"color": "#A5A5A5",
-				"font_style": null,
-				"font_weight": null
-			}
-		}
-	}
+    "auto_signature_help": false,
+    "cursor_blink": true,
+    "vim": {
+        "toggle_relative_line_numbers": false,
+    },
+    "wsl_connections": [
+        {
+            "distro_name": "Ubuntu",
+            "user": null,
+            "projects": [
+                {
+                    "paths": ["/home/sm0kii"],
+                },
+            ],
+        },
+    ],
+    "show_wrap_guides": true,
+    "agent_servers": {
+        "github-copilot-cli": {
+            "type": "registry",
+        },
+        "claude-acp": {
+            "type": "registry",
+        },
+        "your_agent": {
+            "type": "custom",
+            "command": "path_to_executable",
+        },
+    },
+    "git_panel": {
+        "scrollbar": {
+            "show": "auto",
+        },
+        "sort_by_path": true,
+        "status_style": "label_color",
+        "tree_view": true,
+        "collapse_untracked_diff": false,
+    },
+    "current_line_highlight": "all",
+    "text_rendering_mode": "platform_default",
+    "agent_ui_font_size": 15,
+    "pane_split_direction_horizontal": "down",
+    "window_decorations": "client",
+    "edit_predictions": {
+        "mode": "subtle",
+        "provider": "copilot",
+        "copilot": {
+            "enable_next_edit_suggestions": true,
+        },
+        "enabled_in_text_threads": false,
+    },
+    "tab_size": 4,
+    "restore_on_startup": "last_session",
+    "languages": {
+        "Git Commit": {
+            "prettier": {
+                "allowed": true,
+            },
+        },
+        "Python": {
+            "colorize_brackets": true,
+        },
+        "JavaScript": {
+            "colorize_brackets": true,
+            "formatter": "prettier",
+        },
+        "TypeScript": {
+            "colorize_brackets": true,
+            "formatter": "prettier",
+        },
+        "C++": {
+            "colorize_brackets": true,
+        },
+        "Python constraints": {
+            "formatter": "prettier",
+            "colorize_brackets": true,
+            "preferred_line_length": 120,
+        },
+    },
+    "colorize_brackets": true,
+    "inlay_hints": {
+        "enabled": true,
+        "show_type_hints": true,
+        "show_parameter_hints": true,
+        "show_other_hints": true,
+        "show_background": false,
+        "edit_debounce_ms": 700,
+        "scroll_debounce_ms": 50,
+        "toggle_on_modifiers_press": null,
+        "show_value_hints": true,
+    },
+    "indent_guides": {
+        "enabled": true,
+        "line_width": 1,
+        "active_line_width": 0,
+        "coloring": "indent_aware",
+        "background_coloring": "disabled",
+    },
+    "soft_wrap": "editor_width",
+    "toolbar": {
+        "code_actions": true,
+        "breadcrumbs": true,
+    },
+    "minimap": {
+        "thumb": "always",
+        "max_width_columns": 90,
+        "display_in": "all_editors",
+        "show": "always",
+    },
+    "autosave": "off",
+    "notification_panel": {
+        "button": true,
+    },
+    "outline_panel": {
+        "button": true,
+    },
+    "cursor_shape": "bar",
+    "use_smartcase_search": true,
+    "ui_font_weight": 450,
+    "ui_font_family": "JetBrainsMono Nerd Font",
+    "buffer_line_height": "comfortable",
+    "buffer_font_weight": 400,
+    "buffer_font_family": "JetBrainsMono Nerd Font",
+    "diagnostics_max_severity": "hint",
+    "pane_split_direction_vertical": "right",
+    "zoomed_padding": true,
+    "active_pane_modifiers": {},
+    "centered_layout": {
+        "right_padding": null,
+        "left_padding": null,
+    },
+    "preview_tabs": {
+        "enable_preview_from_file_finder": true,
+    },
+    "debugger": {
+        "button": true,
+    },
+    "search": {
+        "regex": true,
+        "button": true,
+    },
+    "diagnostics": {
+        "button": true,
+        "inline": {
+            "enabled": true,
+            "update_debounce_ms": 150,
+            "padding": 2,
+            "min_column": 0,
+            "max_severity": "all",
+        },
+    },
+    "status_bar": {
+        "cursor_position_button": true,
+        "active_language_button": true,
+    },
+    "tab_bar": {
+        "show_pinned_tabs_in_separate_row": false,
+        "show_tab_bar_buttons": true,
+        "show_nav_history_buttons": true,
+        "show": true,
+    },
+    "context_servers": {
+        "mcp-server-github": {
+            "enabled": true,
+            "settings": {
+                "github_personal_access_token": "your access token",
+            },
+        },
+    },
+    "project_panel": {
+        "diagnostic_badges": true,
+        "hide_hidden": false,
+        "sticky_scroll": false,
+        "scrollbar": {
+            "show": "never",
+        },
+        "indent_size": 11,
+        "folder_icons": true,
+        "entry_spacing": "standard",
+        "hide_root": false,
+        "git_status": true,
+        "file_icons": true,
+        "dock": "left",
+        "button": true,
+        "hide_gitignore": false,
+    },
+    "disable_ai": false,
+    "git": {
+        "branch_picker": {
+            "show_author_name": true,
+        },
+        "inline_blame": {
+            "show_commit_summary": true,
+        },
+        "hunk_style": "unstaged_hollow",
+    },
+    "helix_mode": false,
+    "vim_mode": false,
+    "use_system_window_tabs": false,
+    "bottom_dock_layout": "contained",
+    "tabs": {
+        "show_diagnostics": "all",
+        "show_close_button": "hover",
+        "close_position": "left",
+        "file_icons": true,
+        "git_status": true,
+    },
+    "title_bar": {
+        "show_onboarding_banner": true,
+        "show_project_items": true,
+        "show_branch_name": true,
+        "show_menus": false,
+        "show_sign_in": true,
+        "show_user_picture": true,
+        "show_branch_icon": true,
+    },
+    "calls": {
+        "mute_on_join": true,
+    },
+    "agent": {
+        "inline_assistant_model": {
+            "provider": "copilot_chat",
+            "model": "gpt-5.1-codex-max",
+            "enable_thinking": false,
+        },
+        "profiles": {
+            "descriptive": {
+                "default_model": {
+                    "provider": "copilot_chat",
+                    "model": "gpt-5.2",
+                    "enable_thinking": false,
+                },
+                "name": "Descriptive",
+                "tools": {},
+                "enable_all_context_servers": false,
+                "context_servers": {},
+            },
+        },
+        "tool_permissions": {
+            "tools": {
+                "terminal": {
+                    "default": "allow",
+                    "always_allow": [
+                        {
+                            "pattern": "^cat\\b",
+                        },
+                        {
+                            "pattern": "^grep\\b",
+                        },
+                        {
+                            "pattern": "^sed\\b",
+                        },
+                    ],
+                },
+                "fetch": {
+                    "default": "allow",
+                },
+                "create_directory": {
+                    "default": "allow",
+                },
+                "mcp:mcp-server-github:search_code": {
+                    "default": "allow",
+                },
+                "mcp:mcp-server-github:search_issues": {
+                    "default": "allow",
+                },
+            },
+        },
+        "favorite_models": [
+            {
+                "provider": "copilot_chat",
+                "model": "gpt-5.1-codex-max",
+                "enable_thinking": false,
+            },
+            {
+                "provider": "copilot_chat",
+                "model": "claude-sonnet-4.5",
+                "enable_thinking": false,
+            },
+            {
+                "provider": "copilot_chat",
+                "model": "claude-opus-4.6",
+                "enable_thinking": false,
+            },
+            {
+                "provider": "copilot_chat",
+                "model": "gpt-5.4",
+                "enable_thinking": false,
+            },
+            {
+                "provider": "copilot_chat",
+                "model": "gpt-4o",
+                "enable_thinking": false,
+            },
+        ],
+        "default_profile": "ask",
+        "default_model": {
+            "enable_thinking": false,
+            "provider": "copilot_chat",
+            "model": "gpt-4o",
+        },
+        "model_parameters": [],
+    },
+    "terminal": {
+        "option_as_meta": false,
+        "dock": "bottom",
+        "scrollbar": {
+            "show": "always",
+        },
+        "toolbar": {
+            "breadcrumbs": false,
+        },
+        "default_height": 320,
+        "keep_selection_on_copy": false,
+        "font_weight": 400,
+        "working_directory": "current_project_directory",
+        "shell": {
+            "with_arguments": {
+                "program": "pwsh.exe",
+                "args": [],
+            },
+        },
+        "button": true,
+        "blinking": "terminal_controlled",
+        "cursor_shape": "underline",
+        "font_family": "JetBrainsMono Nerd Font",
+        "font_size": 14,
+    },
+    "prettier": {
+        "allowed": true,
+    },
+    "telemetry": {
+        "diagnostics": false,
+        "metrics": false,
+    },
+    "base_keymap": "VSCode",
+    "icon_theme": {
+        "mode": "system",
+        "light": "Symbols Icon Theme",
+        "dark": "Symbols Icon Theme",
+    },
+    "ui_font_size": 15.0,
+    "buffer_font_size": 14.0,
+    "theme": {
+        "mode": "dark",
+        "light": "Catppuccin Iced Latte (Blur)",
+        "dark": "Catppuccin Espresso (Blur)",
+    },
+    "lsp": {
+        "tailwindcss-language-server": {
+            "settings": {
+                "classAttributes": [
+                    "class",
+                    "className",
+                    "headerClassName",
+                    "contentContainerClassName",
+                    "columnWrapperClassName",
+                    "endFillColorClassName",
+                    "imageClassName",
+                    "tintColorClassName",
+                    "ios_backgroundColorClassName",
+                    "thumbColorClassName",
+                    "trackColorOnClassName",
+                    "trackColorOffClassName",
+                    "selectionColorClassName",
+                    "cursorColorClassName",
+                    "underlineColorAndroidClassName",
+                    "placeholderTextColorClassName",
+                    "selectionHandleColorClassName",
+                    "colorsClassName",
+                    "progressBackgroundColorClassName",
+                    "titleColorClassName",
+                    "underlayColorClassName",
+                    "colorClassName",
+                    "drawerBackgroundColorClassName",
+                    "statusBarBackgroundColorClassName",
+                    "backdropColorClassName",
+                    "backgroundColorClassName",
+                    "ListFooterComponentClassName",
+                    "ListHeaderComponentClassName",
+                ],
+                "classFunctions": ["useResolveClassNames"],
+            },
+        },
+    },
+    "experimental.theme_overrides": {
+        "syntax": {
+            "attribute": {
+                "color": "#00E0FF",
+                "font_style": null,
+                "font_weight": null,
+            },
+            "boolean": {
+                "color": "#FF77E9",
+                "font_style": "italic",
+                "font_weight": null,
+            },
+            "comment": {
+                "color": "#6B7280",
+                "font_style": "italic",
+                "font_weight": null,
+            },
+            "comment.doc": {
+                "color": "#71717A",
+                "font_style": "italic",
+                "font_weight": null,
+            },
+            "constant": {
+                "color": "#FFD866",
+                "font_style": null,
+                "font_weight": null,
+            },
+            "constructor": {
+                "color": "#36F9F6",
+                "font_style": null,
+                "font_weight": null,
+            },
+            "embedded": {
+                "color": "#50FA7B",
+                "font_style": null,
+                "font_weight": null,
+            },
+            "emphasis": {
+                "color": "#FF8C00",
+                "font_style": "italic",
+                "font_weight": null,
+            },
+            "emphasis.strong": {
+                "color": "#FF8C00",
+                "font_style": "italic",
+                "font_weight": 700,
+            },
+            "enum": {
+                "color": "#82AAFF",
+                "font_style": null,
+                "font_weight": null,
+            },
+            "function": {
+                "color": "#00FFFF",
+                "font_style": null,
+                "font_weight": null,
+            },
+            "hint": {
+                "color": "#52525B",
+                "font_style": null,
+                "font_weight": 700,
+            },
+            "keyword": {
+                "color": "#FF2E97",
+                "font_style": null,
+                "font_weight": null,
+            },
+            "label": {
+                "color": "#C0C0C0",
+                "font_style": null,
+                "font_weight": null,
+            },
+            "link_text": {
+                "color": "#00E0FF",
+                "font_style": "italic",
+                "font_weight": null,
+            },
+            "link_uri": {
+                "color": "#00E0FF",
+                "font_style": null,
+                "font_weight": null,
+            },
+            "number": {
+                "color": "#F8E71C",
+                "font_style": null,
+                "font_weight": null,
+            },
+            "operator": {
+                "color": "#FF2E97",
+                "font_style": null,
+                "font_weight": null,
+            },
+            "predictive": {
+                "color": "#FFB454",
+                "font_style": "italic",
+                "font_weight": null,
+            },
+            "preproc": {
+                "color": "#FF8C00",
+                "font_style": null,
+                "font_weight": null,
+            },
+            "primary": {
+                "color": "#00FFFF",
+                "font_style": null,
+                "font_weight": null,
+            },
+            "property": {
+                "color": "#7FDBFF",
+                "font_style": "italic",
+                "font_weight": null,
+            },
+            "punctuation": {
+                "color": "#B3B3B3",
+                "font_style": null,
+                "font_weight": null,
+            },
+            "punctuation.bracket": {
+                "color": "#B3B3B3",
+                "font_style": null,
+                "font_weight": null,
+            },
+            "punctuation.delimiter": {
+                "color": "#A3A3A3",
+                "font_style": null,
+                "font_weight": null,
+            },
+            "punctuation.list_marker": {
+                "color": "#A3A3A3",
+                "font_style": null,
+                "font_weight": null,
+            },
+            "punctuation.special": {
+                "color": "#FF2E97",
+                "font_style": null,
+                "font_weight": null,
+            },
+            "string": {
+                "color": "#C2F970",
+                "font_style": null,
+                "font_weight": null,
+            },
+            "string.escape": {
+                "color": "#50FA7B",
+                "font_style": null,
+                "font_weight": null,
+            },
+            "string.regex": {
+                "color": "#63F5B8",
+                "font_style": null,
+                "font_weight": null,
+            },
+            "string.special": {
+                "color": "#FF8C00",
+                "font_style": null,
+                "font_weight": null,
+            },
+            "string.special.symbol": {
+                "color": "#F8E71C",
+                "font_style": null,
+                "font_weight": null,
+            },
+            "tag": {
+                "color": "#00E0FF",
+                "font_style": null,
+                "font_weight": null,
+            },
+            "text.literal": {
+                "color": "#C0C0C0",
+                "font_style": null,
+                "font_weight": null,
+            },
+            "title": {
+                "color": "#FF8C00",
+                "font_style": null,
+                "font_weight": 700,
+            },
+            "type": {
+                "color": "#82AAFF",
+                "font_style": "italic",
+                "font_weight": null,
+            },
+            "variable": {
+                "color": "#E0E0E0",
+                "font_style": null,
+                "font_weight": null,
+            },
+            "variant": {
+                "color": "#A5A5A5",
+                "font_style": null,
+                "font_weight": null,
+            },
+        },
+    },
 }
