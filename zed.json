@@ -1,4 +1,11 @@
 {
+    "diff_view_style": "split",
+    "cli_default_open_behavior": "existing_window",
+    "proxy": "",
+    "collaboration_panel": {
+        "dock": "left",
+    },
+    "redact_private_values": false,
     "auto_signature_help": false,
     "cursor_blink": true,
     "vim": {
@@ -6,7 +13,7 @@
     },
     "wsl_connections": [
         {
-            "distro_name": "Ubuntu",
+            "distro_name": "archlinux",
             "user": null,
             "projects": [
                 {
@@ -15,9 +22,22 @@
             ],
         },
     ],
+    "code_actions_on_format": {
+        "source.organizeImports.biome": true,
+        "source.fixAll.biome": true,
+    },
     "show_wrap_guides": true,
     "agent_servers": {
+        "codex-acp": {
+            "type": "registry"
+        },
         "github-copilot-cli": {
+            "favorite_config_option_values": {
+                "model": [
+                    "claude-haiku-4.5",
+                    "gpt-5.3-codex"
+                ]
+            },
             "type": "registry",
         },
         "claude-acp": {
@@ -29,6 +49,7 @@
         },
     },
     "git_panel": {
+        "dock": "left",
         "scrollbar": {
             "show": "auto",
         },
@@ -46,9 +67,8 @@
         "mode": "subtle",
         "provider": "copilot",
         "copilot": {
-            "enable_next_edit_suggestions": true,
+            "enable_next_edit_suggestions": false,
         },
-        "enabled_in_text_threads": false,
     },
     "tab_size": 4,
     "restore_on_startup": "last_session",
@@ -57,9 +77,6 @@
             "prettier": {
                 "allowed": true,
             },
-        },
-        "Python": {
-            "colorize_brackets": true,
         },
         "JavaScript": {
             "colorize_brackets": true,
@@ -72,7 +89,7 @@
         "C++": {
             "colorize_brackets": true,
         },
-        "Python constraints": {
+        "Python": {
             "formatter": "prettier",
             "colorize_brackets": true,
             "preferred_line_length": 120,
@@ -109,10 +126,8 @@
         "show": "always",
     },
     "autosave": "off",
-    "notification_panel": {
-        "button": true,
-    },
     "outline_panel": {
+        "dock": "left",
         "button": true,
     },
     "cursor_shape": "bar",
@@ -161,21 +176,43 @@
         "show": true,
     },
     "context_servers": {
+        "mcp-server-supabase": {
+            "enabled": true,
+            "remote": false,
+            "settings": {
+                "supabase_access_token": "",
+                "read_only": false,
+            },
+        },
         "mcp-server-github": {
             "enabled": true,
+            "remote": false,
             "settings": {
-                "github_personal_access_token": "your access token",
+                "github_personal_access_token": "",
+            },
+        },
+        "mcp-server-context7": {
+            "enabled": true,
+            "remote": false,
+            "settings": {
+                "context7_api_key": "",
             },
         },
     },
     "project_panel": {
+        "sort_mode": "directories_first",
+        "indent_guides": {
+            "show": "never",
+        },
+        "git_status_indicator": true,
+        "bold_folder_labels": true,
         "diagnostic_badges": true,
         "hide_hidden": false,
         "sticky_scroll": false,
         "scrollbar": {
             "show": "never",
         },
-        "indent_size": 11,
+        "indent_size": 12,
         "folder_icons": true,
         "entry_spacing": "standard",
         "hide_root": false,
@@ -207,18 +244,19 @@
         "git_status": true,
     },
     "title_bar": {
+        "show_branch_status_icon": true,
         "show_onboarding_banner": true,
         "show_project_items": true,
         "show_branch_name": true,
         "show_menus": false,
         "show_sign_in": true,
         "show_user_picture": true,
-        "show_branch_icon": true,
     },
     "calls": {
         "mute_on_join": true,
     },
     "agent": {
+        "dock": "right",
         "inline_assistant_model": {
             "provider": "copilot_chat",
             "model": "gpt-5.1-codex-max",
@@ -294,11 +332,12 @@
                 "enable_thinking": false,
             },
         ],
-        "default_profile": "ask",
+        "default_profile": "write",
         "default_model": {
-            "enable_thinking": false,
-            "provider": "copilot_chat",
-            "model": "gpt-4o",
+            "effort": "high",
+            "enable_thinking": true,
+            "provider": "zed.dev",
+            "model": "claude-sonnet-4-6",
         },
         "model_parameters": [],
     },
